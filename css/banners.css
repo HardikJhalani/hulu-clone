@@ -1,0 +1,87 @@
+#banners {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url('/images/banner-1.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18%;
+    transition: 0.3s;
+}
+
+#banners .navigator {
+    display: flex;
+    width: 35%;
+    color: #9c9c9c;
+    font-size: 16px;
+}
+
+.navigator h5 {
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.navigator h5:hover {
+    color: rgba(200, 200, 200, 0.4);
+}
+
+.navigator .active {
+    color: white;
+}
+
+.navigator .active:hover {
+    color: #C8C8C8;
+}
+
+.underline {
+    height: 5px;
+    content: "";
+    width: calc(100% - 35px);
+    transform: translateX(0px);
+    background-color: white;
+    margin-top: 8px;
+}
+
+#banners h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+#banners h3 {
+    width: 40%;
+    font-size: 21px;
+    color: white;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+#banners .companies {
+    display: flex;
+    margin-top: 30px;
+}
+
+.companies img {
+    width: 40px;
+}
+
+.white {
+    background-color: white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-right: 20px;
+    align-items: center;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#banners h6 {
+    margin-top: 30px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#banners a {
+    color: rgba(255, 255, 255, 0.8);
+}

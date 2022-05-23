@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Khula', sans-serif;
+}
+
+.main {
+    min-height: 90vh;
+    background: url('/images/header.jpg') no-repeat;
+    background-size: cover;
+    filter: saturate(1.4) brightness(1.3) contrast(1.1);
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    background-image: linear-gradient(to bottom, #000000, #070707, #0d0d0d, #121212, #161616);
+    opacity: 0.6;
+    filter: contrast(1.1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 0;
+}
+
+.navbar .nav-logo img {
+    width: 150px;
+}
+
+.navbar #login {
+    color: #a8afbd;
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+.navbar #login:hover {
+    background-color: #323843;
+    color: white;
+    /* opacity: 1; */
+}
+
+.intro {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.intro img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.intro h2 {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.intro h5,
+.details h5 {
+    color: #06b868;
+    letter-spacing: 1.06px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.intro .get,
+.deal .get {
+    width: 100%;
+    padding: 14px 0;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: 0.35s ease;
+    cursor: pointer;
+}
+
+.intro .get:hover,
+.deal .get:hover {
+    opacity: 0.7;
+}
+
+.intro h6 {
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.7px;
+}
+
+.intro h6 span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.intro h6 a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.deal {
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    column-gap: 120px;
+}
+
+.deal .img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.details h5 {
+    line-height: 1.1;
+}
+
+.details h2 {
+    color: white;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.get-deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.get-deal h6 {
+    width: 70%;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.get-deal h6 a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.get-deal .get {
+    width: 70%;
+}
+
+.section {
+    background-color: #0B0C0F;
+    padding: 80px 0 100px 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container-sm {
+    width: 70%;
+    margin: 0 auto;
+}
+
+i {
+    font-size: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.gray {
+    background-color: #272C34;
+}
+
+.bi-check2 {
+    font-size: 30px;
+    color: #06b868;
+}
+
+.bi-dash-lg {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,80 @@
+.included {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.included h4 {
+    color: #06b868;
+}
+
+.included h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.included p {
+    font-size: 20px;
+    color: white;
+    padding-right: 200px;
+    padding-left: 200px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.included .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    column-gap: 20px;
+}
+
+.cards .card {
+    height: 60vh;
+    margin-top: 50px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cards .card:hover {
+    transform: scale(1.05);
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('/images/cover-1.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('/images/cover-2.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('/images/cover-3.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('/images/cover-4.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.card:nth-child(4)::after {
+    content: "Premium network add-ons available for an additional cost";
+    position: absolute;
+    top: 102%;
+    left: 10%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 10px;
+}
+
+.card h3 {
+    color: white;
+}
+
+.card h1 {
+    font-size: 30px;
+}
